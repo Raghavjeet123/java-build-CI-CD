@@ -16,6 +16,8 @@ jobs:
 
    - name: Install jdk
      uses: actions/setup-java@v4
+     with:
+      java-version: '1.8'
 
    - name: install and build maven
      run: mvn clean install
